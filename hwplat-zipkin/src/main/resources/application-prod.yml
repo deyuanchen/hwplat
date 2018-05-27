@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: hwplat-zipkin
+server:
+  port: 5555
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://hwplat-eureka:1111/eureka/
+  instance:
+    prefer-ip-address: true
+logging:
+  file: /mnt/logs/${spring.application.name}.log
+  level:
+    org:
+      springframework: WARN

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: hwplat-eureka
+server:
+  port: 1114
+eureka:
+  instance:
+    hostname: hwplat-eureka-1111
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://hwplat-eureka-1111:1111/eureka/,http://hwplat-eureka-1112:1112/eureka/
+logging:
+  file: logs/${spring.application.name}.log
+  level:
+    org:
+      springframework: WARN
+  #server:
+    #enable-self-preservation: false
+   #eviction-interval-timer-in-ms: 3000
+   # wait-time-in-ms-when-sync-empty: 6000000
+   # peer-eureka-nodes-update-interval-ms: 60000
+
