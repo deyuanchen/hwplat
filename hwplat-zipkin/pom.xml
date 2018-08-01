@@ -64,7 +64,7 @@
         </dependencies>
     </dependencyManagement>
 
-    <!-- spring-boot的maven插件-->
+    <!-- tttpring-boot的maven插件-->
     <build>
 
         <plugins>
