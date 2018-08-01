@@ -44,7 +44,7 @@
             <artifactId>zipkin-autoconfigure-ui</artifactId>
             <version>${zipkin.autoconfigure.ui.version}</version>
         </dependency>
-        <!--ogstash-->
+
         <dependency>
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
